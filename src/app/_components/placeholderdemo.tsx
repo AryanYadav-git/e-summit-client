@@ -60,7 +60,7 @@ export function PlaceholdersAndVanishInputDemo() {
       />
       {user ? (<AnswerComponent isLoading={isLoading} load={load}/>) : 
      <div className="text-center text-sm font-medium text-gray-600 mt-2 dark:text-gray-400">
-       Please log in to chat with SurchAI.
+       Please log in to chat with yaml-gen.
      </div>}
       
     </div>

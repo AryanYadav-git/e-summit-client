@@ -32,7 +32,7 @@ const AnswerComponent = ({ isLoading, className, load }: AnswerProps) => {
                 {load?.query}
               </div>
               <div
-                className="overflow-y-auto h-[400px] w-[320px] md:w-[550px] bg-gray-100 dark:bg-neutral-800 p-2 md:p-4 rounded-md"
+                className="overflow-y-auto h-[400px] min-w-[320px] md:min-w-[550px] bg-gray-100 dark:bg-neutral-800 p-2 md:p-4 rounded-md w-full"
                 // className=" bg-gray-100 dark:bg-neutral-800 p-4 rounded-md"
               >
                 {/* <ReactMarkdown >{load.data }</ReactMarkdown> */}

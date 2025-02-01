@@ -1,5 +1,6 @@
 {
-  "name": "chatgpt",
+  "name": "yml-generator",
+  "description": "This is a YAML generator for spheron's ICL ",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,6 +18,7 @@
     "axios": "^1.7.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "ethers": "^6.13.5",
     "framer-motion": "^11.3.21",
     "lucide-react": "^0.424.0",
     "next": "14.2.5",

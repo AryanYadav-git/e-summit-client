@@ -18,6 +18,8 @@ import { useStateContext } from "@/contexts/ContextProvider";
 import History from "./history";
 import axios from "axios";
 import Image from "next/image";
+import WalletButton from "./wallet-button";
+import { Feather } from "lucide-react";
 export function SidebarDemo() {
   const { user } = useUser();
   const {load, history, setHistory} =  useStateContext();
@@ -84,6 +86,7 @@ export function SidebarDemo() {
           {filteredLinks.map((link, idx) => (
             <SidebarLink key={idx} link={link} />
           ))}
+          <div className=" bg-neutral-700 rounded-md px-6 py-4 w-fit font-semibold"><WalletButton/></div>
           <div className="flex items-center">
             <UserButton
               afterSignOutUrl="/"
@@ -110,15 +113,7 @@ export const Logo = () => {
       href="#"
       className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
     >
-      <div className="flex-shrink-0">
-        <Image
-          src="/icon.png"
-          alt="logo"
-          height={40}
-          width={40}
-          className="size-16 antialiased"
-        />
-      </div>
+      <div className=""><Feather size={30} color="white" className="font-bold"/></div>
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
