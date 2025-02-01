@@ -119,7 +119,7 @@ export const Logo = () => {
         animate={{ opacity: 1 }}
         className="font-extrabold text-black dark:text-white whitespace-pre text-3xl"
       >
-        Yaml Generator
+        Yaml Gen
       </motion.span>
     </Link>
   );

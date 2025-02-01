@@ -51,7 +51,7 @@ export function PlaceholdersAndVanishInputDemo() {
   return (
     <div className="h-[40rem] flex flex-col justify-center items-center px-4">
       <h2 className="mb-6 text-xl text-center sm:text-5xl dark:text-white text-black font-extralight">
-        Deploy with Yaml gen!
+        Deploy with YAML Gen!
       </h2>
       <PlaceholdersAndVanishInput
         placeholders={placeholders}

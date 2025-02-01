@@ -11,7 +11,7 @@ import { ContextProvider } from '../contexts/ContextProvider';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YAML generator",
+  title: "YAML Gen",
   description: "This is a YAML generator for spheron's ICL",
 };
 
