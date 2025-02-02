@@ -34,6 +34,18 @@ export function SidebarDemo() {
     }
   }
 
+  const coldStart = async() => {
+    try{
+      await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/chat/init/`);
+    }catch (error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    coldStart();
+  },[])
+
   useEffect(() => {
     if(user){
       fetchHistory();
